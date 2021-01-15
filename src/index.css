@@ -20,25 +20,6 @@ span {
   color: blue;
 }
 
-button {
-  display: block;
-  width: 100%;
-  margin: 1rem auto;
-  background: blue;
-  color: #fff;
-  outline: none;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #333333;
-  color: #fff;
-}
-
 header {
   background-color: #333333;
   color: #fff;
@@ -68,4 +49,51 @@ article h3 {
 
 .info {
   padding: 1rem;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+  background: blue;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333333;
+  color: #fff;
+}
+
+.link-button {
+  border: none;
+  background: transparent;
+  color: red;
+  margin-left: 1rem;
+  outline: none;
+}
+
+.refresh h1 {
+  text-align: center;
+}
+
+.refresh-btn {
+  display: block;
+  margin: 1rem auto;
+  background: blue;
+  color: #fff;
+  width: 50%;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+}
+
+.refresh-btn:hover {
+  background: #333333;
 }
