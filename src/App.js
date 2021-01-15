@@ -8,9 +8,14 @@ function App() {
   const [tours, setTours] = useState([])
 
   const fetchData = async () => {
-    const response = await fetch(url)
-    const data = await response.json()
-    console.log(data)
+    try {
+      const response = await fetch(url)
+      const data = await response.json()
+      setTours(data)
+      setLoading(false)
+    } catch (err) {
+      console.error(err)
+    }
   }
 
   useEffect(() => {
@@ -24,8 +29,11 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="title">tourGuide</h1>
+        <h1 className="title">
+          tour<span>Guide</span>{' '}
+        </h1>
       </header>
+      <Tours tours={tours} />
     </div>
   )
 }
