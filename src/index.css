@@ -51,6 +51,10 @@ article h3 {
   padding: 1rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   display: block;
   width: 100%;
